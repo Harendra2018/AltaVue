@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
+
 export default defineConfig({
-  base: './',                       // works from any folder / subpath
+  base: '/AltaVue/',   // must match the GitHub repo name (case-sensitive)
   build: { chunkSizeWarningLimit: 1500 }
 });

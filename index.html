@@ -10,10 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 <!-- start downloading the 3D assets immediately, in parallel with the scripts -->
-<link rel="preload" href="/jet.glb" as="fetch" crossorigin media="(min-width:761px) and (pointer:fine)">
-<link rel="preload" href="/daytime.exr" as="fetch" crossorigin media="(min-width:761px) and (pointer:fine)">
-<link rel="preload" href="/jet_low.glb" as="fetch" crossorigin media="(max-width:760px), (pointer:coarse)">
-<link rel="preload" href="/daytime_low.exr" as="fetch" crossorigin media="(max-width:760px), (pointer:coarse)">
+<link rel="preload" href="%BASE_URL%jet.glb" as="fetch" crossorigin media="(min-width:761px) and (pointer:fine)">
+<link rel="preload" href="%BASE_URL%daytime.exr" as="fetch" crossorigin media="(min-width:761px) and (pointer:fine)">
+<link rel="preload" href="%BASE_URL%jet_low.glb" as="fetch" crossorigin media="(max-width:760px), (pointer:coarse)">
+<link rel="preload" href="%BASE_URL%daytime_low.exr" as="fetch" crossorigin media="(max-width:760px), (pointer:coarse)">
 <style>
 html.is-loading{overflow:hidden}
 body{background:#060a18}
@@ -63,8 +63,8 @@ body{background:#060a18}
       <button aria-pressed="false" data-k="mountains">Mountain lakes</button>
     </div>
     <div class="slider" id="slider">
-      <img id="imgAfter" src="/img/ocean_cine.jpg" alt="Enhanced cinematic version">
-      <img id="imgBefore" class="top" src="/img/ocean_sim.jpg" alt="Original Falcon BMS screenshot">
+      <img id="imgAfter" src="%BASE_URL%img/ocean_cine.jpg" alt="Enhanced cinematic version">
+      <img id="imgBefore" class="top" src="%BASE_URL%img/ocean_sim.jpg" alt="Original Falcon BMS screenshot">
       <div class="bar"></div>
       <span class="tag l">Sim screenshot</span><span class="tag r">Altavue cinematic</span>
       <input type="range" min="0" max="100" value="50" aria-label="Compare original and enhanced image" id="range">
@@ -78,12 +78,12 @@ body{background:#060a18}
     <h2>Free wallpapers</h2>
     <p class="sub">16:9, ready for desktop. Free for personal use. Please don't resell them.</p>
     <div class="grid">
-      <figure class="card big"><img src="/img/isles_cine.jpg" alt="Fighter jet over tropical islands at golden hour" loading="lazy">
-        <figcaption><span><strong>Golden Isles</strong><small>1920 × 1080</small></span><a class="dl" href="/img/isles_cine.jpg" download="altavue-golden-isles.jpg">Download</a></figcaption></figure>
-      <figure class="card"><img src="/img/mountains_cine.jpg" alt="Fighter jet over green mountains and lakes at sunset" loading="lazy">
-        <figcaption><span><strong>Mountain Lakes</strong><small>1920 × 1080</small></span><a class="dl" href="/img/mountains_cine.jpg" download="altavue-mountain-lakes.jpg">Download</a></figcaption></figure>
-      <figure class="card"><img src="/img/ocean_cine.jpg" alt="Fighter jet over the ocean at sunset" loading="lazy">
-        <figcaption><span><strong>Ocean Strike</strong><small>1920 × 1080</small></span><a class="dl" href="/img/ocean_cine.jpg" download="altavue-ocean-strike.jpg">Download</a></figcaption></figure>
+      <figure class="card big"><img src="%BASE_URL%img/isles_cine.jpg" alt="Fighter jet over tropical islands at golden hour" loading="lazy">
+        <figcaption><span><strong>Golden Isles</strong><small>1920 × 1080</small></span><a class="dl" href="%BASE_URL%img/isles_cine.jpg" download="altavue-golden-isles.jpg">Download</a></figcaption></figure>
+      <figure class="card"><img src="%BASE_URL%img/mountains_cine.jpg" alt="Fighter jet over green mountains and lakes at sunset" loading="lazy">
+        <figcaption><span><strong>Mountain Lakes</strong><small>1920 × 1080</small></span><a class="dl" href="%BASE_URL%img/mountains_cine.jpg" download="altavue-mountain-lakes.jpg">Download</a></figcaption></figure>
+      <figure class="card"><img src="%BASE_URL%img/ocean_cine.jpg" alt="Fighter jet over the ocean at sunset" loading="lazy">
+        <figcaption><span><strong>Ocean Strike</strong><small>1920 × 1080</small></span><a class="dl" href="%BASE_URL%img/ocean_cine.jpg" download="altavue-ocean-strike.jpg">Download</a></figcaption></figure>
     </div>
   </div>
 </section>
