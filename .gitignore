@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build output (GitHub Actions builds this)
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Env files
+.env
+.env.*
